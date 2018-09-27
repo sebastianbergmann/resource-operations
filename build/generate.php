@@ -15,7 +15,7 @@ $resourceFunctions = [];
 foreach ($functions as $function => $arguments) {
     foreach ($arguments as $argument) {
         if ($argument === 'resource') {
-            $resourceFunctions[] = str_replace('\'1', '', $function);
+            $resourceFunctions[] = explode('\'', $function)[0];
         }
     }
 }
