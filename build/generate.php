@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-$functions         = require __DIR__ . '/arginfo.php';
+$functions         = require __DIR__ . '/FunctionSignatureMap.php';
 $resourceFunctions = [];
 
 foreach ($functions as $function => $arguments) {
     foreach ($arguments as $argument) {
         if ($argument === 'resource') {
-            $resourceFunctions[] = $function;
+            $resourceFunctions[] = str_replace('\'1', '', $function);
         }
     }
 }

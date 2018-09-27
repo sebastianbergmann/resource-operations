@@ -33,6 +33,6 @@
             </fileset>
         </delete>
 
-        <get src="https://raw.githubusercontent.com/rlerdorf/phan/master/includes/arginfo.php" dest="${basedir}/build/arginfo.php" skipexisting="true"/>
+        <get src="https://raw.githubusercontent.com/phan/phan/master/src/Phan/Language/Internal/FunctionSignatureMap.php" dest="${basedir}/build/FunctionSignatureMap.php" skipexisting="true"/>
     </target>
 </project>
