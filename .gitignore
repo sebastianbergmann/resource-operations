@@ -1,3 +1,5 @@
 /.idea
+/.php_cs.cache
 /build/arginfo.php
-
+/composer.lock
+/vendor

@@ -1,5 +1,5 @@
 #!/usr/bin/env php
-<?php
+<?php declare(strict_types=1);
 /*
  * This file is part of resource-operations.
  *
@@ -14,7 +14,7 @@ $resourceFunctions = [];
 
 foreach ($functions as $function => $arguments) {
     foreach ($arguments as $argument) {
-        if ($argument == 'resource') {
+        if ($argument === 'resource') {
             $resourceFunctions[] = $function;
         }
     }
@@ -24,7 +24,7 @@ $resourceFunctions = array_unique($resourceFunctions);
 sort($resourceFunctions);
 
 $buffer = <<<EOT
-<?php
+<?php declare(strict_types=1);
 /*
  * This file is part of resource-operations.
  *
@@ -36,12 +36,12 @@ $buffer = <<<EOT
 
 namespace SebastianBergmann\ResourceOperations;
 
-class ResourceOperations
+final class ResourceOperations
 {
     /**
      * @return string[]
      */
-    public static function getFunctions()
+    public static function getFunctions(): array
     {
         return [
 

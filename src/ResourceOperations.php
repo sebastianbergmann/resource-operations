@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 /*
  * This file is part of resource-operations.
  *
@@ -10,12 +10,12 @@
 
 namespace SebastianBergmann\ResourceOperations;
 
-class ResourceOperations
+final class ResourceOperations
 {
     /**
      * @return string[]
      */
-    public static function getFunctions()
+    public static function getFunctions(): array
     {
         return [
             'Directory::close',
