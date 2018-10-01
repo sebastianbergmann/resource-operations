@@ -10,12 +10,12 @@
 
 namespace SebastianBergmann\ResourceOperations;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @covers SebastianBergmann\ResourceOperations\ResourceOperations
  */
-class ResourceOperationsTest extends PHPUnit_Framework_TestCase
+class ResourceOperationsTest extends TestCase
 {
     /**
      * @covers       SebastianBergmann\ResourceOperations\ResourceOperations::getFunctions
