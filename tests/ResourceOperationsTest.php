@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 /*
  * This file is part of resource-operations.
  *
@@ -12,17 +12,15 @@ namespace SebastianBergmann\ResourceOperations;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers SebastianBergmann\ResourceOperations\ResourceOperations
+ * @covers \SebastianBergmann\ResourceOperations\ResourceOperations
  */
-class ResourceOperationsTest extends TestCase
+final class ResourceOperationsTest extends TestCase
 {
-    /**
-     * @covers       SebastianBergmann\ResourceOperations\ResourceOperations::getFunctions
-     */
     public function testGetFunctions(): void
     {
-        $tab = ResourceOperations::getFunctions();
-        $this->assertTrue(\is_array($tab), 'ResourceOperations::getFunctions does not return an array');
-        $this->assertContains('zip_open', $tab);
+        $functions = ResourceOperations::getFunctions();
+
+        $this->assertInternalType('array', $functions);
+        $this->assertContains('fopen', $functions);
     }
 }
