@@ -3,3 +3,4 @@
 /build/FunctionSignatureMap.php
 /composer.lock
 /vendor
+/.phpunit.result.cache
