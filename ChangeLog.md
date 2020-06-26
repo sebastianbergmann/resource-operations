@@ -2,6 +2,12 @@
 
 All notable changes are documented in this file using the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
+## [3.0.2] - 2020-06-26
+
+### Added
+
+* This component is now supported on PHP 8
+
 ## [3.0.1] - 2020-06-15
 
 ### Changed
@@ -34,6 +40,7 @@ All notable changes are documented in this file using the [Keep a CHANGELOG](htt
 
 * Initial release
 
+[3.0.2]: https://github.com/sebastianbergmann/comparator/compare/3.0.1...3.0.2
 [3.0.1]: https://github.com/sebastianbergmann/comparator/compare/3.0.0...3.0.1
 [3.0.0]: https://github.com/sebastianbergmann/comparator/compare/2.0.1...3.0.0
 [2.0.1]: https://github.com/sebastianbergmann/comparator/compare/2.0.0...2.0.1
