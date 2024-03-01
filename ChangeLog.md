@@ -2,6 +2,10 @@
 
 All notable changes are documented in this file using the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
+## [2.0.3] - 2024-03-01
+
+* No code changes, only updated `.gitattributes` to not export non-essential files.
+
 ## [2.0.2] - 2020-11-30
 
 ### Changed
@@ -28,6 +32,7 @@ All notable changes are documented in this file using the [Keep a CHANGELOG](htt
 
 * Initial release
 
+[2.0.3]: https://github.com/sebastianbergmann/comparator/compare/2.0.2...2.0.3
 [2.0.2]: https://github.com/sebastianbergmann/comparator/compare/2.0.1...2.0.2
 [2.0.1]: https://github.com/sebastianbergmann/comparator/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/sebastianbergmann/comparator/compare/1.0.0...2.0.0
